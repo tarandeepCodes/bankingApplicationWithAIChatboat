@@ -19,7 +19,7 @@ const ChatAssistant = () => {
       const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
         method: "POST",
         headers: {
-          "Authorization": "Bearer YOUR_OPENROUTER_API_KEY_HERE", // Replace with your API key
+          "Authorization": "Bearer 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", // Replace with your API key
           "Content-Type": "application/json",
           "HTTP-Referer": window.location.origin,
         },
@@ -53,7 +53,7 @@ const ChatAssistant = () => {
     <div style={styles.container}>
       {/* Header with Avatar and Name */}
       <div style={styles.header}>
-        <img src="https://cdn-icons-png.flaticon.com/512/6997/6997662.png" alt="Tara" style={styles.avatar} />
+        <img src="https://cdn-icons-png.flaticon.com/512/2922/2922561.png" alt="Tara" style={styles.avatar} />
         <div>
           <h3 style={{ margin: 0 }}>Tara</h3>
           <p style={{ margin: 0, fontSize: '12px', color: '#666' }}>Your AI Chat Assistant</p>

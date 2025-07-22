@@ -44,15 +44,20 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-100 to-white p-4 relative font-sans">
-      <header className="flex flex-col items-center justify-center mb-10">
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/1995/1995470.png"
-          alt="Bank Logo"
-          className="w-20 h-20 mb-3"
-        />
-        <h1 className="text-5xl font-extrabold text-blue-800 tracking-wide">MyBank</h1>
-        <p className="text-lg text-gray-600 mt-2">Your Trusted Financial Partner</p>
+     <header className="mb-10">
+        <div className="ml-100">
+          <img
+            src="/mybankLogo.png"
+            alt="Bank Logo"
+            className="w-24 h-24 mb-1"
+          />
+          <div className="text-left">
+            <h1 className="text-4xl font-extrabold text-blue-800 tracking-wide">MyBank</h1>
+            <p className="text-sm text-gray-600 mt-1">Your Trusted Financial Partner</p>
+          </div>
+        </div>
       </header>
+
 
       <main className="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-6">
         {page === 'home' && (
